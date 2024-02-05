@@ -1,0 +1,722 @@
+@font-face {
+  font-family: "warm";
+  src: url("../font/warm.woff");
+}
+img {
+  border: none;
+}
+/*############## container ##############*/
+#container {
+  width: 100%;
+}
+#container h3 {
+  width: 100%;
+  text-align: center;
+  font-family: "Glory", sans-serif;
+  font-size: 28px;
+  padding: 20px 0;
+  color: #a6a6a6;
+}
+
+/*############## content ##############*/
+#content {
+  width: 100%;
+  font-family: "warm";
+}
+
+/*############## recent_work ##############*/
+#recent_work {
+  width: 100%;
+  padding-top: 100px;
+}
+
+/*############## recent_inner ##############*/
+#recent_inner {
+  width: 1250px;
+  height: 820px;
+  margin: 30px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/*############## recent_inner_btnArea ##############*/
+#recent_inner .btnArea p {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  cursor: pointer;
+}
+#recent_inner .btnArea p img {
+  width: 100%;
+  height: 100%;
+}
+
+#recent_inner .nextBtn {
+  left: 50px;
+  top: -24px;
+  transform: rotate(90deg);
+}
+#recent_inner .prevBtn {
+  left: 50px;
+  top: 730px;
+  transform: rotate(270deg);
+}
+
+/*############## recent_work / window ##############*/
+#recent_work .window {
+  width: 904px;
+  height: 804px;
+  overflow: hidden;
+  position: absolute;
+  right: 70px;
+  top: 0;
+  border: 2px dashed gold;
+  border-radius: 50px 50px;
+  float: left;
+}
+#recent_work .window li {
+  width: 900px;
+  height: 800px;
+}
+#recent_work .window li img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px 50px;
+}
+
+/*############## recent_work / recent_menu ##############*/
+#recent_work .recent_menu {
+  width: 204px;
+  height: 6000px;
+  background-color: #fafafa;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px 10px;
+}
+
+#recent_work .recent_menu li {
+  width: 200px;
+  height: 200px;
+  padding: 4px 2px;
+  padding-bottom: 0;
+  float: left;
+  overflow: hidden;
+}
+#recent_work .recent_menu li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#recent_work .recent_menu li a img {
+  width: 100%;
+  height: 100%;
+}
+
+/*############## toon ##############*/
+#toon {
+  width: 100%;
+  background-color: #f7f7fe;
+  position: relative;
+}
+
+#toon .buttonArea {
+  width: 100px;
+  height: 80px;
+  transform: rotate(270deg);
+  position: absolute;
+  left: 1500px;
+  top: 20px;
+  cursor: pointer;
+}
+#toon .buttonArea img {
+  width: 100%;
+  height: 100%;
+}
+
+#toon .upArea {
+  width: 100px;
+  height: 80px;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 1600px;
+  bottom: 20px;
+  cursor: pointer;
+}
+#toon .upArea img {
+  width: 100%;
+  height: 100%;
+}
+
+#toon .toon_inner {
+  width: 1250px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#toon .toon_inner li {
+  padding-left: 5px;
+  position: relative;
+}
+#toon .toon_inner li p {
+  position: absolute;
+  left: 5px;
+  top: 50px;
+  transition: all 0.7s linear 0.2s;
+}
+#toon .toon_inner h4 {
+  width: 1250px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 26px;
+  color: #000;
+  text-align: center;
+  padding: 5px 0;
+  cursor: pointer;
+}
+#toon .toon_inner h4:hover {
+  color: #faac58;
+}
+
+/*############## tipArea ##############*/
+.tipArea {
+  width: 250px;
+  height: 85px;
+  position: absolute;
+  left: 55%;
+  top: 10px;
+  border: 2px dotted #161853;
+  border-radius: 100px 100px;
+  font-size: 22px;
+  padding-left: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fefbff;
+  transform: all 3s linear;
+}
+.tipArea:hover {
+  border-color: #ffcca9;
+}
+.tipArea .Title {
+  width: 100%;
+  height: 20px;
+  text-indent: 14px;
+  margin-top: 10px;
+}
+.tipArea .Desc {
+  width: 240px;
+  height: 70px;
+  padding-left: 7px;
+}
+
+@keyframes ani {
+  0% {
+    top: 10px;
+  }
+  100% {
+    top: 20px;
+  }
+}
+
+/*############## toon_0 (컵케이크, 5장) ##############*/
+#toon .toon_0 {
+  width: 2050px;
+  height: 470px;
+  border-bottom: 2px dashed #d5ec8f;
+  position: relative;
+}
+
+#toon .toon_0 .btnArea p {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 400px;
+  top: 0;
+  cursor: pointer;
+}
+#toon .toon_0 .btnArea p img {
+  width: 100%;
+  height: 100%;
+}
+#toon .toon_0 .btnArea .nBtn {
+  left: 800px;
+  transform: rotate(180deg);
+}
+
+#toon .toon_0 p {
+  width: 410px;
+  height: 400px;
+  float: left;
+}
+#toon .toon_0 p img {
+  width: 400px;
+  height: 100%;
+  border-radius: 30px 30px;
+}
+
+/*############## toon_0_0 (컵케이크, 5장) ##############*/
+.toon_0_0 {
+  z-index: 5;
+}
+.toon_0_1 {
+  z-index: 4;
+}
+.toon_0_2 {
+  z-index: 3;
+}
+.toon_0_3 {
+  z-index: 2;
+}
+.toon_0_4 {
+  z-index: 1;
+}
+
+/*############## toon_1 (뜨거운 커피, 5장) ##############*/
+#toon .toon_1 {
+  width: 2050px;
+  height: 470px;
+  border-bottom: 2px dashed #d5ec8f;
+}
+#toon .toon_1 p {
+  width: 410px;
+  height: 400px;
+  float: left;
+}
+#toon .toon_1 p img {
+  width: 400px;
+  height: 100%;
+  border-radius: 30px 30px;
+}
+
+/*############## toon_1_0 (뜨거운 커피, 5장) ##############*/
+.toon_1_0 {
+  z-index: 5;
+}
+.toon_1_1 {
+  z-index: 4;
+}
+.toon_1_2 {
+  z-index: 3;
+}
+.toon_1_3 {
+  z-index: 2;
+}
+.toon_1_4 {
+  z-index: 1;
+  opacity: 0;
+}
+
+/*############## toon_2 (베개인척, 4장) ##############*/
+#toon .toon_2 {
+  width: 1720px;
+  height: 490px;
+  float: left;
+  border-bottom: 2px dashed #d5ec8f;
+  border-right: 2px dashed #d5ec8f;
+}
+#toon .toon_2 p {
+  width: 410px;
+  height: 400px;
+}
+#toon .toon_2 p img {
+  width: 400px;
+  height: 400px;
+  border-radius: 30px 30px;
+}
+
+/*############## toon_1_0 (베개인척, 4장) ##############*/
+.toon_2_0 {
+  z-index: 4;
+}
+.toon_2_1 {
+  z-index: 3;
+}
+.toon_2_2 {
+  z-index: 2;
+}
+.toon_2_3 {
+  z-index: 1;
+}
+
+/*############## toon_3 (어디까지 흘러갈까, 3장) ##############*/
+#toon .toon_3 {
+  width: 1230px;
+  height: 490px;
+  padding: 0 50px;
+  float: left;
+  border-bottom: 2px dashed #d5ec8f;
+  border-right: 2px dashed #d5ec8f;
+}
+#toon .toon_3 h4 {
+  width: 1230px;
+}
+#toon .toon_3 p {
+  width: 425px;
+  height: 390px;
+  margin-bottom: 10px;
+}
+#toon .toon_3 p img {
+  width: 390px;
+  height: 100%;
+  border-radius: 30px 30px;
+}
+
+/*############## toon_3_0 (어디까지 흘러갈까, 3장) ##############*/
+.toon_3_0 {
+  z-index: 3;
+}
+.toon_3_1 {
+  z-index: 2;
+}
+.toon_3_2 {
+  z-index: 1;
+  opacity: 0;
+}
+
+/*############## toon_4(무슨 감) ##############*/
+#toon .toon_4 {
+  width: 1230px;
+  height: 690px;
+  border-bottom: 2px dashed #d5ec8f;
+  float: left;
+}
+#toon .toon_4 h4 {
+  width: 100%;
+}
+#toon .toon_4 p {
+  width: 620px;
+  height: 620px;
+  float: left;
+}
+#toon .toon_4 p img {
+  width: 600px;
+  height: 610px;
+  border-radius: 30px 30px;
+}
+
+/*############## toon_4_0 (무슨 감 2장) ##############*/
+.toon_4_0 {
+  z-index: 2;
+}
+.toon_4_1 {
+  opacity: 0;
+  z-index: 1;
+}
+
+/*############## toon_5(오늘도 넌) ##############*/
+#toon .toon_5 {
+  width: 1230px;
+  height: 690px;
+  border-bottom: 2px dashed #d5ec8f;
+  float: left;
+}
+#toon .toon_5 h4 {
+  width: 100%;
+}
+#toon .toon_5 p {
+  width: 620px;
+  height: 620px;
+  float: left;
+}
+#toon .toon_5 p img {
+  width: 600px;
+  height: 610px;
+  border-radius: 30px 30px;
+}
+
+/*############## toon_5_0 (오늘도 넌 2장) ##############*/
+.toon_5_0 {
+  z-index: 2;
+}
+.toon_5_1 {
+  opacity: 0;
+  z-index: 1;
+}
+
+/*############## toon_6 (시간과 돈) ##############*/
+#toon .toon_6 {
+  width: 1235px;
+  height: 820px;
+  border-bottom: 2px dashed #d5ec8f;
+  float: left;
+}
+#toon .toon_6 h4 {
+  width: 100%;
+}
+#toon .toon_6 p {
+  width: 610px;
+  height: 760px;
+  float: left;
+}
+#toon .toon_6 .height {
+  width: 610px;
+  height: 600px;
+  padding-top: 20px;
+  top: 100px;
+  z-index: 1;
+}
+#toon .toon_6 p img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px 30px;
+}
+
+/*############## toon_6_0 (시간과 돈2장) ##############*/
+.toon_6_0 {
+  z-index: 2;
+}
+
+/*############## toon_7 (위로) ##############*/
+#toon .toon_7 {
+  width: 1235px;
+  height: 820px;
+  border-bottom: 2px dashed #d5ec8f;
+  float: left;
+}
+#toon .toon_7 h4 {
+  width: 100%;
+}
+#toon .toon_7 p {
+  width: 580px;
+  height: 740px;
+  float: left;
+}
+#toon .toon_7 .height {
+  width: 580px;
+  height: 600px;
+  padding-top: 20px;
+  left: 5px;
+  top: 100px;
+  z-index: 1;
+}
+#toon .toon_7 p img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px 30px;
+}
+
+/*############## toon_7_0 (위로 2장) ##############*/
+.toon_7_0 {
+  left: 5px;
+  top: 50px;
+  z-index: 2;
+}
+
+/*############## toon_8 (선물) ##############*/
+#toon .toon_8 {
+  width: 1230px;
+  height: 830px;
+  border-bottom: 2px dashed #d5ec8f;
+  float: left;
+}
+#toon .toon_8 h4 {
+  width: 100%;
+}
+#toon .toon_8 p {
+  width: 580px;
+  height: 720px;
+  left: 5px;
+  top: 50px;
+}
+#toon .toon_8 .height {
+  width: 510px;
+  height: 500px;
+  padding-top: 20px;
+}
+#toon .toon_8 p img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px 30px;
+}
+
+/*############## toon_8_0 (선물, 2장) ##############*/
+.toon_8_0 {
+  z-index: 2;
+}
+.toon_8_1 {
+  z-index: 1;
+}
+
+/*############## toon_9 (벌써 잔대!!) ##############*/
+#toon .toon_9 {
+  width: 1230px;
+  height: 700px;
+  float: left;
+  position: relative;
+}
+#toon .toon_9 .tipArea {
+  width: 250px;
+  height: 50px;
+  text-indent: 10px;
+}
+#toon .toon_9 .tipArea p {
+  width: 100%;
+  height: 25px;
+  top: 0;
+  padding-top: 15px;
+  font-size: 20px;
+}
+#toon .toon_9 h4 {
+  width: 100%;
+}
+#toon .toon_9 p {
+  width: 610px;
+  height: 610px;
+  left: 5px;
+  top: 50px;
+}
+#toon .toon_9 p img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px 30px;
+  transition: all 0.3s linear 0.2s;
+}
+
+/*############## toon_9_0 (벌써 잔대!!, 2장) ##############*/
+.toon_9_0 {
+  z-index: 2;
+}
+.toon_9_1 {
+  z-index: 1;
+}
+
+/*############## wallpapers ##############*/
+#wallpapers {
+  width: 100%;
+  height: 1340px;
+  position: relative;
+  transform: scale(1); /*background-color:gold;*/
+}
+#wallpapers .imgArea {
+  width: 437px;
+  height: 237px;
+  margin: 4px 4px 0 0;
+  border-radius: 40px 40px;
+  float: left;
+}
+#wallpapers .imgArea a {
+  display: block;
+  width: 100%;
+  height: 100%; /*border:2px dotted #fff;*/
+  border-radius: 40px 40px;
+  overflow: hidden;
+}
+/*#wallpapers .imgArea:hover a{border-color:#A2CDDF;}*/
+
+#wallpapers li a img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s linear;
+}
+#wallpapers li:hover img {
+  transform: scale(1.2);
+}
+
+/*############## wallpapers / chara_0 (익명이) ##############*/
+#wallpapers .chara_0 {
+  width: 890px;
+  height: 1270px;
+  position: absolute;
+  left: 36px;
+  top: 57px;
+}
+
+#wallpapers .chara_0 .chara_title {
+  width: 880px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 5px;
+  border-radius: 30px 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#wallpapers .chara_0 .chara_title:hover span {
+  width: 870px;
+  height: 45px;
+  border-color: #fff100;
+}
+#wallpapers .chara_0 .chara_title span {
+  display: block;
+  width: 440px;
+  height: 45px;
+  margin: 0 auto;
+  border: 3px solid #f5e91b;
+  margin-bottom: 5px;
+  border-radius: 30px 30px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  transition: width 1s ease;
+}
+
+/*############## wallpapers / chara_1 (깨꾹이) ##############*/
+#wallpapers .chara_1 {
+  width: 890px;
+  height: 1270px;
+  position: absolute;
+  right: 40px;
+  top: 57px;
+}
+#wallpapers .chara_1 li a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px 40px;
+}
+
+#wallpapers .chara_1 .chara_title {
+  width: 880px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 5px;
+  border-radius: 30px 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#wallpapers .chara_1 .chara_title:hover span {
+  width: 870px;
+  height: 45px;
+  border-color: #72b285;
+}
+#wallpapers .chara_1 .chara_title span {
+  display: block;
+  width: 440px;
+  height: 45px;
+  margin: 0 auto;
+  border: 3px solid #32a955;
+  margin-bottom: 5px;
+  border-radius: 30px 30px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  transition: width 1s ease;
+}
+
+/*############## wallpapers / 모달팝업 ##############*/
+#view {
+  width: 1000px;
+  height: 563px;
+  border: 5px solid #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+#view p img {
+  width: 100%;
+  height: 100%;
+}
+
+#full {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+}

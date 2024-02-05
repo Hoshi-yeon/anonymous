@@ -1,0 +1,277 @@
+img {
+  border: none;
+}
+@font-face {
+  font-family: "warm";
+  src: url("../font/warm.woff");
+}
+
+#wrap {
+  position: absolute;
+}
+
+/*############## container ##############*/
+#container {
+  width: 1902px;
+  background-image: linear-gradient(top, #faeee7 20%, #faeee0 80%);
+  background-image: -webkit-linear-gradient(top, #faeee7 20%, #f4f9f9 80%);
+}
+
+/*############## main ##############*/
+#main {
+  width: 100%;
+  height: 980px;
+  position: relative;
+}
+
+#main .text {
+  width: 700px;
+  height: 500px;
+  color: #333;
+  position: absolute;
+  left: 160px;
+  top: 190px;
+  font-size: 24px;
+  font-family: "warm";
+}
+
+#main .main_text {
+  width: 100%;
+  height: 70px;
+  opacity: 0;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  /* animation: ani1 2s; */
+}
+@keyframes ani1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#main .desc_text {
+  width: 100%;
+  height: 120px;
+  opacity: 0;
+  font-size: 22px;
+  position: absolute;
+  left: 0;
+  top: 220px;
+  /* animation: ani2 2s;
+  animation-delay: 0.5s; */
+}
+@keyframes ani2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#main .desc_text strong {
+  font-size: 18px;
+}
+#main .sc_text {
+  width: 100%;
+  height: 60px;
+  line-height: 80px;
+  font-size: 28px;
+  font-weight: bold;
+  opacity: 0;
+  position: absolute;
+  left: 500px;
+  top: 440px;
+}
+
+#main .showText {
+  opacity: 1;
+}
+
+#main .sc_text:hover {
+  color: #87c399;
+  text-shadow: 0 0 10px rgba(255, 255, 0, 0.4);
+  cursor: pointer;
+}
+
+#main .img {
+  width: 684px;
+  height: 506px;
+  opacity: 0;
+  position: absolute;
+  right: 160px;
+  top: 110px;
+  /* animation: ani3 2.5s;
+  animation-delay: 0.8s; */
+}
+@keyframes ani3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#main .img p {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+/*############## intro ##############*/
+#intro {
+  width: 100%;
+  font-family: "Jua", sans-serif;
+}
+
+/*############## intro / character_desc ##############*/
+#character_desc {
+  width: 100%;
+  height: 900px;
+  padding: 70px 0 50px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+#character_desc .name {
+  width: 1280px;
+  /* border: 1px solid #ccc; */
+  overflow: hidden;
+  margin: 50px auto 10px;
+  border-radius: 50px;
+  /* box-shadow: 3px 0 2px rgba(0, 0, 0, 0.5); */
+}
+#character_desc .name li {
+  width: 160px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 20px;
+  /* outline: 1px solid #fff; /*background-color:#F1F3F8;*/
+  text-align: center;
+  cursor: pointer;
+  float: left;
+}
+
+#character_desc .name li.naming a {
+  color: #449e35;
+  font-size: 22px;
+  animation: ani4 1s linear;
+}
+@keyframes ani4 {
+  0% {
+    line-height: 100px;
+  }
+  25% {
+    line-height: 120px;
+  }
+  50% {
+    line-height: 100px;
+  }
+  75% {
+    line-height: 80px;
+  }
+  100% {
+    line-height: 100px;
+  }
+}
+
+/*jQuery랑 연결되는 파트*/
+
+/*#character_desc .name li a:hover{font-size:20px; color:#0c8831; }*/
+
+#character_desc .desc {
+  width: 1280px;
+  height: 600px;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+#character_desc .desc li {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#character_desc .desc .img_area {
+  width: 600px;
+  height: 600px;
+  border-radius: 50px;
+  text-align: center;
+  float: left;
+}
+#character_desc .desc .text_area {
+  width: 600px;
+  height: 140px;
+  margin: 200px 0 0 40px;
+  font-size: 20px;
+  float: left;
+}
+
+/*캐릭터 소개 개별조정*/
+#character_desc .desc .character_0 .text_area,
+#character_desc .desc .character_1 .text_area {
+  margin: 250px 0 0 40px;
+}
+
+.desc .character_text {
+  text-align: center;
+  line-height: 600px;
+}
+
+.desc .character_ {
+  width: 100%;
+  height: 100%;
+}
+
+#character_desc .desc .character_6 img {
+  padding-top: 10px;
+}
+
+/*################# desc / position / img #################
+		#character_desc .character_1{border-right:0;}
+		#character_desc .character_3{border-right:0;}
+		#character_desc .character_5{border-right:0;}
+		#character_desc .character_7{border-right:0; border-bottom:0;}*/
+
+#character_desc .name:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.up_btn {
+  width: 110px;
+  height: 110px;
+  background: url(../img/about/button.png) 0 0 no-repeat;
+  background-size: 100%;
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 340px;
+  right: 160px;
+  cursor: pointer;
+}
+
+.up_btn:hover {
+  animation: ani1 1.5s infinite;
+}
+
+@keyframes ani1 {
+  0% {
+    bottom: 340px;
+  }
+  50% {
+    bottom: 350px;
+  }
+  100% {
+    bottom: 340px;
+  }
+}

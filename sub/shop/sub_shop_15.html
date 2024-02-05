@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Sticker_Anonymous</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../../css/header_area.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/Sticker_Anonymous.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/footer_area.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@200&display=swap" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/Sticker_Anonymous.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <h2>로고 이미지 및 네비게이션 영역</h2>
+        <div id="header_innner">
+          <h1>
+            <a href="../../index.html" title="home">
+              <img src="../../img/logo/logo4.png" alt="logo_img" />
+            </a>
+          </h1>
+          <nav id="gnb">
+            <h2>네비게이션 영역</h2>
+            <ul id="gnb_menu">
+              <!--각 sub 페이지로 연결-->
+              <li><a href="../sub_about_tab.html" title="about">ABOUT</a></li>
+              <!--익명이는요?-->
+              <li><a href="../sub_shop.html" title="shop">SHOP</a></li>
+              <!--상품 판매페이지-->
+              <li><a href="../sub_project.html" title="project">PROJECT</a></li>
+              <!--텀블벅에서 진행했던 것들 구매 페이지로 만들기-->
+              <li><a href="../sub_artworks.html" title="artworks">ARTWORKS</a></li>
+              <!--그라폴리오 pc/phone-->
+              <li><a href="../sub_minigame.html" title="minigame">MINIGAME</a></li>
+              <!-- 미니게임 탭 -->
+              <li><a href="../sub_contact.html" title="contact">CONTACT</a></li>
+              <!--contact, 오는 길 등-->
+            </ul>
+          </nav>
+          <div id="top_menu">
+            <div class="infoMenu">
+              <ul>
+                <li><a href="../login.html" title="로그인">로그인</a></li>
+                <li><a href="../login.html" title="회원가입">회원가입</a></li>
+                <li><a href="https://www.ikmyeongshop.com/" title="익명상점">익명상점</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section id="container">
+        <h2>상품 목록</h2>
+        <div id="content">
+          <div id="descArea">
+            <div id="desc_inner">
+              <div id="imgArea">
+                <p></p>
+              </div>
+              <div id="textArea">
+                <!-- 일단 영역만 잡아놓고 다음에 form으로 변경하기 -->
+                <h3>익명이 스프링 투명데코스티커</h3>
+                <div class="formArea">
+                  <p>판매가 <span>2,000원</span></p>
+                  <p>구매제한 <span>최소 1개</span></p>
+                  <p>배송비 <span>2,500원 (주문시 결제)</span></p>
+                </div>
+                <div id="selectArea">
+                  <select id="menu" onchange="menuSel();">
+                    <option value="옵션" selected="selected">= 옵션선택 =</option>
+                    <option value="익명이 스프링 투명데코스티커">익명이 스프링 투명데코스티커</option>
+                  </select>
+                  <p class="total"><label for="total">합계 : </label><input id="total" type="text" name="total" readonly />원</p>
+                  <ul id="totalArea"></ul>
+                </div>
+                <div id="btnArea">
+                  <p id="btn1" onclick="buyBtn();"><button>구매하기</button></p>
+                  <p id="btn2"><button>관심상품</button></p>
+                  <p id="btn3"><button>♡</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="product_desc">
+            <p class="shopImg">
+              <img src="../../img/shop/shop_sticker_Anonymous.jpg" alt="상세 이미지" />
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <h2>푸터 안내 및 카피라이터</h2>
+        <div id="footer_nav">
+          <ul>
+            <li><a href="#" title="라이선스문의">라이선스문의</a></li>
+            <li><a href="#" title="이용약관">이용약관</a></li>
+            <li><a href="#" title="개인정보취급방침">개인정보취급방침</a></li>
+            <li><a href="#" title="이용안내">이용안내</a></li>
+            <li><a href="#" title="광고/제휴문의">광고/제휴문의</a></li>
+          </ul>
+        </div>
+        <div id="footer_desc">
+          <div class="desc_area">
+            <div class="footer_logo">
+              <p>
+                <img src="../../img/logo/logo4.png" alt="로고 이미지" />
+              </p>
+            </div>
+            <div class="footer_text">
+              <address>
+                <strong>익명</strong><br />
+                대표 : 채승우<br />
+                사업자등록번호 : 108-19-20302 / 통신판매업신고번호 : 2016-서울금천-0446<br />
+                대표번호 : 02-812-8530<br />
+                주소 : 서울특별시 금천구 두산로 70 (현대지식산업센터) A-1704<br />
+              </address>
+            </div>
+            <div class="qna">
+              <strong>각종 문의안내</strong>
+              <p class="size">평일 09:00 ~ 18:00</p>
+              <p class="size">E-Mail : itfriende@gmail.com</p>
+              <p class="btn">
+                <a href="#" title="1:1상담하기"><button>1:1 상담하기 &gt;</button></a>
+                <a href="#" title="자주 묻는 질문"><button>자주 묻는 질문 &gt;</button></a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <p id="copy">copyright &copy; ikmyeongshop.com all rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

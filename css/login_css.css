@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "warm";
+  src: url("../font/warm.woff");
+}
+img {
+  border: none;
+}
+/*############## container ##############*/
+#container {
+  width: 100%;
+  background-color: #f6f7f8;
+  font-family: "warm";
+}
+
+/*############## content ##############*/
+#content {
+  width: 1080px;
+  margin: 0 auto;
+  padding-top: 100px;
+  background-color: #fff;
+}
+#content:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*############## info ##############*/
+#info {
+  width: 100%;
+  height: 540px;
+  padding: 40px 0;
+  border-top: 2px solid #138535;
+  position: relative;
+}
+#info h3 {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+
+/*############## login ##############*/
+#login {
+  width: 399px;
+  height: 350px;
+  padding-left: 100px;
+  border-right: 1px solid #ccc;
+  font-size: 20px;
+  float: left;
+}
+
+#info .login_desc p {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+#info form fieldset {
+  border: 0;
+}
+#info form div {
+  width: 100%;
+  height: 200px;
+}
+
+#info form .id {
+  width: 210px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+#info form .id input {
+  width: 100%;
+  height: 100%;
+  text-indent: 5px;
+}
+
+#info form .pw {
+  width: 210px;
+  height: 40px;
+}
+#info form .pw input {
+  width: 100%;
+  height: 100%;
+  text-indent: 5px;
+}
+
+#info form .btn {
+  width: 210px;
+  height: 40px;
+  margin-top: 10px;
+}
+#info form .btn input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #24703a;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+#info form .btn input:hover {
+  background-color: #84de9f;
+  color: #000;
+}
+
+#info form .chk {
+  width: 120px;
+  height: 25px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #777;
+}
+#info form .chk input {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+
+#info .id label,
+.pw label {
+  width: 1px;
+  height: 1px;
+  line-height: 0;
+  overflow: hidden;
+  position: absolute;
+  left: -9999px;
+}
+#info form legend {
+  width: 1px;
+  height: 1px;
+  line-height: 0;
+  overflow: hidden;
+  position: absolute;
+  left: -9999px;
+}
+
+/*############## join ##############*/
+#join {
+  width: 320px;
+  height: 350px;
+  padding-left: 100px;
+  font-size: 20px;
+  float: left;
+}
+#join .check label {
+  font-size: 18px;
+}
+
+#join form input {
+  width: 210px;
+  height: 40px;
+  text-indent: 5px;
+  margin-bottom: 10px;
+}
+#join h4 {
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+#join_but {
+  width: 140px;
+  height: 40px;
+  border: none;
+  background-color: #ffdac7;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+#join_but:hover {
+  background-color: #ffefbc;
+}
+
+/*############## gif ##############*/
+#gif {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  left: 314px;
+  top: 130px;
+}
+#gif img {
+  width: 100%;
+  height: 100%;
+}

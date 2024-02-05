@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>contract</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/header_area.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer_area.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@200&display=swap" rel="stylesheet" />
+    <style>
+      @font-face {
+        font-family: "warm";
+        src: url("../font/warm.woff");
+      }
+      img {
+        border: none;
+      }
+
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: #000;
+      }
+
+      #container {
+        width: 100%;
+      }
+
+      #content {
+        width: 100%;
+        padding-top: 100px;
+      }
+
+      #join_title {
+        width: 1260px;
+        height: 60px;
+        margin: 0 auto;
+        border-bottom: 1px solid #aaa;
+      }
+      #join_title h3 {
+        width: 600px;
+        height: 60px;
+        line-height: 60px;
+        text-align: left;
+        font-size: 24px;
+        float: left;
+      }
+      #join_title .stage {
+        width: 530px;
+        height: 60px;
+        line-height: 60px;
+        text-align: right;
+        float: left;
+      }
+      #join_title .stage p {
+        display: inline-block;
+        margin-left: 20px;
+        color: #aaa;
+      }
+      #join_title .stage .one {
+        color: #ab3e55;
+      }
+
+      .contract {
+        width: 1100px;
+        margin: 10px auto 0;
+      }
+      .contract h4 {
+        font-size: 20px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #d7d7d7;
+      }
+
+      .contract form {
+        width: 100%;
+      }
+      .contract fieldset {
+        width: 100%;
+        border: none;
+      }
+      .contract input {
+        width: 15px;
+        height: 15px;
+      }
+
+      .contract legend {
+        position: absolute;
+        left: -99999px;
+        width: 1px;
+        height: 1px;
+        font-size: 1px;
+        line-height: 0;
+        overflow: hidden;
+      }
+      .contract p {
+        width: 800px;
+        margin: 20px auto;
+      }
+      .contract textarea {
+        width: 100%;
+        height: 200px;
+        text-indent: 10px;
+      }
+
+      .allChek span {
+        font-weight: 700;
+      }
+      .allChek input {
+        width: 20px;
+        height: 20px;
+      }
+
+      #btnArea {
+        width: 500px;
+        margin: 0 auto;
+      }
+
+      #prevBtn {
+        width: 200px;
+        height: 60px;
+        background-color: #fff;
+        border: none;
+        border: 1px solid #aaa;
+        float: left;
+        cursor: pointer;
+      }
+      #nextBtn {
+        width: 200px;
+        height: 60px;
+        margin-left: 100px;
+        background-color: #5e5e5e;
+        border: none;
+        border: 1px solid #aaa;
+        color: #fff;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      function allChk() {
+        var all = document.getElementById("allChek").checked;
+        console.log(all);
+        var subBtn = document.getElementsByClassName("subChk");
+        console.log(subBtn);
+
+        if (all == true) {
+          for (var i = 0; i < subBtn.length; i++) {
+            subBtn[i].checked = true;
+          }
+        } else {
+          for (var i = 0; i < subBtn.length; i++) {
+            subBtn[i].checked = false;
+          }
+        }
+      }
+
+      function unchk() {
+        var all = document.getElementById("allChek");
+        console.log(all);
+
+        var subBtn = document.getElementsByClassName("subChk");
+        console.log(subBtn);
+        /*
+				var allCheck = true;
+
+				for(var i=0; i<subBtn.length; i++){
+					if(!subBtn[i].checked){
+						allCheck=false;
+					}
+				}
+				if(allCheck){
+					all.checked = true;
+				}
+				else{
+					all.checked = false;
+				}
+			*/
+        for (var i = 0; i < subBtn.length; i++) {
+          if (!subBtn[i].checked) {
+            all.checked = false;
+            break;
+          }
+          all.checked = true;
+        }
+      }
+
+      function nextBtn() {
+        var manda1 = document.getElementById("chek_1");
+
+        var manda2 = document.getElementById("chek_2");
+
+        if (manda1.checked == false || manda2.checked == false) {
+          alert("필수 항목에 체크가 되어 있지 않습니다.");
+        } else {
+          location.href = "member_join.html";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <h2>로고 이미지 및 네비게이션 영역</h2>
+        <div id="header_innner">
+          <h1>
+            <a href="../index.html" title="home">
+              <img src="../img/logo/logo4.png" alt="logo_img" />
+            </a>
+          </h1>
+          <nav id="gnb">
+            <h2>네비게이션 영역</h2>
+            <ul id="gnb_menu">
+              <!--각 sub 페이지로 연결-->
+              <li><a href="./sub_about_tab.html" title="about">ABOUT</a></li>
+              <!--익명이는요?-->
+              <li><a href="./sub_shop.html" title="shop">SHOP</a></li>
+              <!--상품 판매페이지-->
+              <li><a href="./sub_artworks.html" title="artworks">ARTWORKS</a></li>
+              <!--그라폴리오 pc/phone-->
+              <li><a href="./sub_minigame.html" title="minigame">MINIGAME</a></li>
+              <!-- 미니게임 탭 -->
+              <li><a href="./sub_contact.html" title="contact">CONTACT</a></li>
+              <!--contact, 오는 길 등-->
+            </ul>
+          </nav>
+          <div id="top_menu">
+            <div class="infoMenu">
+              <ul>
+                <li><a href="login.html" title="로그인">로그인</a></li>
+                <li><a href="login.html" title="회원가입">회원가입</a></li>
+                <li><a href="https://www.ikmyeongshop.com/" title="익명상점">익명상점</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="container">
+        <div id="content">
+          <div id="join_title">
+            <h3>회원가입</h3>
+            <div class="stage">
+              <p class="one">01 약관동의</p>
+              <p class="two">02 정보입력</p>
+              <p class="three">03 가입완료</p>
+            </div>
+          </div>
+          <div class="contract">
+            <h4>약관동의</h4>
+            <form action="#none" method="POST">
+              <fieldset>
+                <legend>약관동의</legend>
+                <p class="allChek"><input id="allChek" type="checkbox" name="allChek" onclick="allChk();" /><span> 모든 약관을 확인하고 전체 동의합니다.</span><label for="allChek"> (선택항목도 포함됩니다.)</label></p>
+                <p><input id="chek_1" class="subChk" type="checkbox" name="chek_1" onclick="unchk();" /><label for="chek_1"> (필수) 이용약관</label></p>
+                <p>
+                  <textarea id="text1" readonly>
+
+ 필수 이용약관 text box
+								</textarea
+                  >
+                </p>
+                <p><input id="chek_2" class="subChk" type="checkbox" name="chek_2" onclick="unchk();" /><label for="chek_2"> (필수) 개인정보 수집 및 이용</label></p>
+                <p>
+                  <textarea id="text2" readonly>
+
+ 필수 이용약관 중 개인정보 수집 및 이용에 관한 text box
+								</textarea
+                  >
+                </p>
+                <p><input id="chek_3" class="subChk" type="checkbox" name="chek_3" onclick="unchk();" /><label for="chek_3"> (선택) 개인정보 수집 및 이용</label></p>
+                <p>
+                  <textarea id="text3" readonly>
+
+ 선택 이용약관 중 개인정보 수집 및 이용 (배송을 위한 자택 주소 수집 등) 에 관한 text box
+								</textarea
+                  >
+                </p>
+              </fieldset>
+            </form>
+            <div id="btnArea">
+              <p>
+                <button id="prevBtn" onclick="history.go(-1)">이전단계</button>
+              </p>
+              <p>
+                <button id="nextBtn" onclick="nextBtn();">다음단계</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+        <h2>푸터 안내 및 카피라이터</h2>
+        <div id="footer_nav">
+          <ul>
+            <li><a href="#none" title="라이선스문의">라이선스문의</a></li>
+            <li><a href="#none" title="이용약관">이용약관</a></li>
+            <li><a href="#none" title="개인정보취급방침">개인정보취급방침</a></li>
+            <li><a href="#none" title="이용안내">이용안내</a></li>
+            <li><a href="#none" title="광고/제휴문의">광고/제휴문의</a></li>
+          </ul>
+        </div>
+        <div id="footer_desc">
+          <div class="desc_area">
+            <div class="footer_logo">
+              <p>
+                <img src="../img/logo/logo4.png" alt="로고 이미지" />
+              </p>
+            </div>
+            <div class="footer_text">
+              <address>
+                <strong>익명</strong><br />
+                대표 : 채승우<br />
+                사업자등록번호 : 108-19-20302 / 통신판매업신고번호 : 2016-서울금천-0446<br />
+                대표번호 : 02-812-8530<br />
+                주소 : 서울특별시 금천구 두산로 70 (현대지식산업센터) A-1704<br />
+              </address>
+            </div>
+            <div class="qna">
+              <strong>각종 문의안내</strong>
+              <p class="size">평일 09:00 ~ 18:00</p>
+              <p class="size">E-Mail : itfriende@gmail.com</p>
+              <p class="btn">
+                <a href="#" title="1:1상담하기"><button>1:1 상담하기 &gt;</button></a>
+                <a href="#" title="자주 묻는 질문"><button>자주 묻는 질문 &gt;</button></a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <p id="copy">copyright &copy; ikmyeongshop.com all rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

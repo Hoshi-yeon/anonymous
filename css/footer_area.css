@@ -1,0 +1,87 @@
+/*############## footer ##############*/
+#footer {
+  width: 100%;
+  background-color: #eee;
+  font-family: "warm";
+}
+
+/*############## footer_nav ##############*/
+#footer_nav {
+  width: 100%;
+  height: 24px;
+  top: 1px solid #c7c7c7;
+  border-bottom: 2px solid #bbb;
+  background-color: #f7f7f7;
+}
+
+#footer_nav ul {
+  text-align: center;
+}
+#footer_nav li {
+  display: inline;
+  font-size: 14px;
+}
+#footer_nav li a {
+  padding: 0 30px;
+}
+#footer_nav li:after {
+  content: "|";
+  color: #777;
+}
+
+#footer_nav ul li a:hover {
+  color: #0c8831;
+}
+
+/*############## footer_desc ##############*/
+#footer_desc {
+  width: 100%;
+  border-bottom: 1px solid #bbb;
+}
+#footer_desc .desc_area {
+  width: 890px;
+  height: 140px;
+  margin: 0 auto;
+}
+
+#footer_desc .footer_logo {
+  width: 200px;
+  height: 100px;
+  padding-right: 65px;
+  margin-top: 20px;
+  float: left;
+}
+#footer_desc .footer_text {
+  width: 400px;
+  font-size: 14px;
+  line-height: 28px;
+  float: left;
+}
+#footer_desc .qna {
+  width: 220px;
+  height: 120px;
+  line-height: 30px;
+  float: left;
+}
+#footer_desc .qna strong {
+  font-size: 17px;
+}
+
+#footer_desc .qna .size {
+  font-size: 13px;
+  line-height: 20px;
+}
+#footer_desc .qna .btn {
+  width: 220px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+#copy {
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 12px;
+}

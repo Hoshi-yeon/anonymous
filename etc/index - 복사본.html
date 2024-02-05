@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <title>index</title>
+  <meta charset="utf-8"/>
+	<style type="text/css">
+		/*############## 초기화 ##############*/
+			*{margin:0; padding:0;}
+			li{list-style-type:none;}
+			a:link, a:visited{text-decoration:none; color:#000;}
+
+		/*############## 버리는 영역 ##############*/
+			h3{position:absolute; left:-99999px; width:1px; height:1px; font-size:1px; line-height:0; overflow:hidden;}
+
+		/*############## wrap ##############*/
+			#wrap{min-width:1025px; width:100%; }
+		
+		/*############## header ##############*/
+			#header{width:100%; height:100px;}
+
+		/*############## header_innner ##############*/
+			#header_innner{width:1280px; height:100%; margin:0 auto;}
+
+			#header_innner h1{width:680px;height:100px; float:left;}
+			#header_innner h1 a{display:block; width:200px; height:100px; margin:0 auto;}
+			#header_innner h1 img{width:200px; height:100px;}
+
+		/*############## top_menu ##############*/
+			#top_menu{width:600px; height:40px; float:left; position:relative;}
+		
+		/*############## .infoMenu ##############*/
+			.infoMenu{width:360px; height:40px; position:absolute; right:0;}
+			.infoMenu ul{width:100%; height:100%;}
+			.infoMenu li{width:120px; font-weight:700; text-align:center; line-height:40px; float:left;}
+			.infoMenu li a{font-size:14px; color:#aaa;}	
+
+			.infoMenu li:hover{background-color:rgba(0,0,0,0.2); text-decoration:underline;}
+			
+		/*############## nav ##############*/
+			#nav{width:600px; height:60px; float:left;}
+			#nav ul{width:100%; height:100%;}
+			#nav li{width:120px; height:100%; text-align:center; line-height:60px; font-weight:700; font-size:14px; float:left;}
+
+			
+			#nav ul li:hover{background-color:rgba(0,0,0,0.3);}
+			#nav ul li a:hover{color:#0C8831;}
+		
+		/*############## visual ##############*/
+			#visual{width:100%; height:600px; background-color:pink; overflow:hidden;}
+			#visual ul{width:5760px; height:600px;}
+			#visual li{width:1920px; height:100%;}
+
+			#visual li a{display:block; width:100%; height:100%;}
+			#visual img{width:100%; height:100%;}
+
+		/*############## container ##############*/
+			#container{width:100%;}
+		
+		/*############## container / content ##############*/
+			#content{width:100%;}
+			#content h2{font-size:28px; text-align:center; line-height:30px; padding:30px 0;}
+		
+		/*############## content / products ##############*/
+			#products{width:100%; height:940px; background-color:#F7F7FE;}
+
+			#products .prd_inn{width:100%; padding-top:50px;}
+	
+			#products ul{width:1220px; height:680px; margin:0 auto;}
+			#products li{width:290px; height:300px; margin:20px 0 0 10px; float:left; position:relative;}
+			
+			#products li a{display:block; width:100%; height:100%;}
+			#products li a strong{display:block; width:100%; height:100%;}
+			#products li a strong img{width:100%; height:100%;}
+
+			#products li .text{display:block; display:none; width:290px; height:180px; padding-top:120px; text-align:center; color:#fff;
+			background-color:rgba(0,0,0,0.5); position:absolute; left:0; top:0;}
+			
+			#products li:hover .text{display:block;}
+
+	
+		/*############## content / project ##############*/
+			#project{width:100%; height:890px;}
+			#project .proDesc{width:100%; height:740px; padding-top:30px;}
+
+			#project ul{width:1220px; height:670px; margin:0 auto;}
+			#project li{width:260px; height:320px; background-color:gold; margin:10px 0 0 20px; float:left; position:relative;}
+
+			/*########## image0 / img (backgroun-image) ##########*/
+				#project .image0{background-image:url("img/shop5/shop5.jpg"); background-position:50% 60%;
+				background-size:140%; background-repeat:no-repeat;}
+
+				#project .image1{background-image:url("img/shop3/shop3.jpg");  background-position:50% 40%;
+				background-size:140%; background-repeat:no-repeat;}
+
+				#project .center0{width:620px; height:320px;
+				background-image:url("img/shop4/shop4_19.jpg"); background-position:50% 30%;
+				background-size:110%;}
+
+				#project .center1{width:620px; height:320px;
+				background-image:url("img/shop2/shop2_16.jpg"); background-position:50% 80%;
+				background-size:100%;}
+
+				#project .image2{ background-image:url("img/shop1/shop1_16.jpg");
+				background-size:220%; background-repeat:no-repeat; background-position:45%;}
+
+				#project .image3{background-image:url("img/shop0/shop0_7.jpg");
+				background-size:120%; background-repeat:no-repeat; background-position:5% 100%;}
+			
+			/*########## image0 / text ##########*/
+				#project .pj_0_text{width:260px; height:60px; font-size:13px; background-color:rgba(0,0,0,0.6);
+				position:absolute; bottom:0;}
+				#project .pj_0_text p{width:250px; height:40px; padding:10px 5px;}
+				#project .pj_0_text p a{display:block; width:100%; height:100%; color:#fff;}
+
+				#project .pj_1_text{width:620px; height:60px; font-size:14px; background-color:rgba(0,0,0,0.6);
+				position:absolute; bottom:0;}
+				#project .pj_1_text p{width:600px; height:40px; padding:10px; margin:0 auto;}
+				#project .pj_1_text p a{display:block; width:100%; height:100%; color:#fff; color:#fff;}
+
+		/*############## content / News ##############*/
+			#news{width:100%; height:930px;}
+			#newsDesc{width:1220px; height:740px; margin:0 auto; padding-top:50px;}
+			
+			#newsDesc .news_main{width:980px; padding-left:20px; float:left;}
+			
+			/*############## News / top (에세이) ##############*/
+			#newsDesc .news_top{width:960px; height:360px; margin-bottom:32px; position:relative;}
+			#newsDesc .news_top a{display:block; width:100%; border:1px solid #ccc;}
+			#newsDesc .news_top span{display:block; width:100%; height:100%;}
+			#newsDesc .news_img{width:960px;}
+
+			/*############## News / list (하단 박스 3개) ##############*/
+			.news_list{width:980px; height:300px; position:relative;}
+
+			.news_list ul{width:100%; height:100%;}
+			.news_list li{width:298px; height:298px; border:1px solid #ccc; position:relative; float:left;}
+			.news_list a{display:block; width:100%; height:100%;}
+			.news_list .img_area{display:block; width:100%; height:100%;}
+			.news_list img{width:100%; height:100%;}
+
+			.news_list .box_1{width:298px; height:138px;}
+			.news_list .box_2{width:298px; height:138px; position:absolute; right:20px; bottom:0;}
+			.news_list .box_3 {width:298px; height:298px; margin:0 30px;}
+
+			/*############## News / text (전체) ##############*/
+			.news_list .news_text{display:block; width:279px; height:40px; font-size:14px; color:#fff;
+			padding:14px 10px; background-color:rgba(0,0,0,0.3); position:absolute; left:0; bottom:0;}
+	
+			/*############## News / side (side 부분) ##############*/
+			#newsDesc .news_side{width:198px; height:690px; border:1px solid #ccc;
+			background-image:url("img/s1.jpg"); background-repeat:no-repeat;
+			background-position:right center; background-size:180%; float:left;
+			position:relative;}
+
+			#newsDesc .news_side p{width:100%; height:100px; text-align:center; font-size:15px;
+			position:absolute; top:220px;}
+			
+			#newsDesc .news_side p a .color0{color:#fff; font-weight:700;}
+			#newsDesc .news_side p a .color1{color:#22B14C; font-weight:700;}
+			#newsDesc .news_side p a .size{font-size:14px; color:#777;}
+
+		
+		/*############## content / video ##############*/
+			#video{width:100%; height:720px; background-color:#F7F7FE;}
+			#video .videoArea{width:100%; height:600px; padding-top:30px;}
+			#video .videoDesc{width:1220px; height:590px; margin:0 auto;}
+
+			#video .videoDesc ul{width:1200px; height:450px; padding:10px 0 0 15px;}
+			#video .videoDesc li{width:580px; height:420px; margin-left:12px; float:left;
+			background-size:100%; background-repeat:no-repeat;}
+			
+			#video .videoDesc li a{display:block; width:100%; height:380px;}
+			#video .videoDesc span{display:block; width:100%; height:100%; position:relative;}
+
+			#video img{width:180px; height:180px; position:absolute; left:200px; top:110px;}
+		
+			#video .video_img0{background-image:url("img/video0.jpg");}
+			#video .video_img1{background-image:url("img/video1.jpg");}
+
+			#video .videoDesc .video_text{width:100%; height:40px; line-height:40px; text-align:center;}
+		/*############## content / artworks ##############*/
+			.artworks{width:100%; height:500px;}
+			.artArea{width:100%; height:400px;}
+			
+			.artArea ul{width:1220px; height:300px; margin:0 auto;  }
+			.artArea li{width:380px; height:110px; margin:20px 0 0 20px; float:left;}
+			.artArea a{display:block; width:100%; height:100%;}
+
+			.artArea span{display:block; width:380px; height:110px; margin-bottom:10px;
+			background-position:80% 50%; background-size:110%;}
+
+			/*############## artworks / background-image ##############*/
+				.artArea .image0{background-image:url("img/background/7월 익명이.png");}
+				.artArea .image1{background-image:url("img/background/7월 깨꾹이.png");}
+				.artArea .image2{background-image:url("img/background/8월 익명이.png");}
+				.artArea .image3{background-image:url("img/background/8월 깨꾹이.png");}
+				.artArea .image4{background-image:url("img/background/3월 익명이.png");}
+				.artArea .image5{background-image:url("img/background/3월 깨꾹이.png");}
+	
+			/*############## artworks / text ##############*/
+				.artArea .text{display:block; width:380px; height:110px; line-height:110px; text-align:center;
+				background-color:rgba(0,0,0,0.4); color:#fff;}
+				
+				.artArea .text{display:none;}
+				.artworks .artArea li a:hover .text{display:block;}
+
+		
+
+		/*############## footer ##############*/
+			#footer{width:100%; height:210px;  background-color:#eee;}
+		
+			/*############## footer_nav ##############*/
+				#footer_nav{width:100%; height:24px; border-top:1px solid #c7c7c7; border-bottom:2px solid #bbb;
+				background-color:#f7f7f7;}
+				
+				#footer_nav ul{text-align:center;}
+				#footer_nav li{display:inline; font-size:14px;}
+				#footer_nav li a{padding:0 30px;}
+				#footer_nav li:after{content:"|"; color:#777;}
+
+				#footer_nav ul li a:hover{color:#0C8831;}
+
+
+
+			/*############## footer_desc ##############*/
+				#footer_desc{width:100%; border-bottom:1px solid #bbb;}
+				#footer_desc .desc_area{width:1200px; height:122px; margin:20px auto;}
+
+				#footer_desc .footer_logo{width:200px; height:100px; padding-right:65px; float:left;}
+				#footer_desc .footer_text{width:500px; font-size:14px; line-height:30px; padding-right:45px; float:left;}
+				#footer_desc .qna{width:220px; height:120px; line-height:30px; float:left;}
+				#footer_desc .qna strong{font-size:17px;}
+
+				#footer_desc .qna .size{font-size:13px; line-height:20px;}
+				#footer_desc .qna .btn{width:220px; height:30px; margin-top:20px;}
+
+				#copy{width:100%; height:24px; line-height:24px; background-color:#fff; text-align:center; font-size:12px;}		
+
+	</style>
+ </head>
+ <body>
+	<div id="wrap">
+		<div id="header">
+			<h3>로고 이미지 및 네비게이션 영역</h3>
+			<div id="header_innner">
+				<h1>
+					<a href="https://www.studio-big.com/" title="home">
+						<img src="img/logo/logo4.png" alt="logo_img"/>
+					</a>
+				</h1>
+				<div id="top_menu">
+					<div class="infoMenu">
+						<ul>
+							<li><a href="#" title="로그인">로그인</a></li>
+							<li><a href="#" title="회원가입">회원가입</a></li>
+							<li><a href="#" title="익명상점">익명상점</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="nav">
+					<ul>	<!--각 sub 페이지로 연결-->
+						<li><a href="#" title="about">ABOUT</a></li>			  <!--익명이는요?-->
+						<li><a href="#" title="news">NEWS</a></li>			  <!--익명이 관련 최신 소식 페이지-->
+						<li><a href="#" title="shop">SHOP</a></li>
+						<li><a href="#" title="project">PROJECT</a></li>	  <!--텀블벅에서 진행했던 것들 구매 페이지로 만들기-->
+						<li><a href="#" title="artworks">ARTWORKS</a></li>  <!--그라폴리오 pc/phone-->
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<div id="container"> <!--이미지에 마우스 올렸을 때 불투명도 값 주는 기능 확인 필요-->
+			<div id="visual">
+				<ul>
+					<li>
+						<a href="#" title="about">
+							<img src="img/visual/visual0.jpg" alt="about"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" title="news">
+							<img src="img/visual/visual1.jpg" alt="news"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" title="project"> 
+							<img src="img/visual/visual2.jpg" alt="project"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="content">	
+				<h3>베스트 상품과 지난 프로젝트, 뉴스, 월페이퍼</h3>
+				<div id="products">
+					<h2>Best Products</h2>
+					<div class="prd_inn">
+						<ul> <!--a태그로 누르면 PROJECT 페이지 이동-->
+							<li class="pj_0">
+								<a href="#" title="Doll">
+									<strong class="img">
+										<img src="img/shop0/shop0.jpg" alt="상품이미지0"/>
+									</strong>
+									<span class="text">
+										<b>Doll</b><br/><br/>
+										35,000원
+									</span>
+								</a>
+							</li>
+							<li class="pj_1">
+								<a href="#" title="Doll">
+									<strong class="img">
+										<img src="img/shop1/shop1.jpg" alt="상품이미지1"/>
+									</strong>
+									<span class="text">
+										<b>Perfume Tag</b><br/><br/>
+										3,400원
+									</span>
+								</a>
+							</li>
+							<li class="pj_2">
+								<a href="#" title="Umbrella">
+									<strong class="img">
+										<img src="img/shop6/shop6_0.jpg" alt="상품이미지2"/>
+									</strong>
+									<span class="text">
+										<b>Umbrella</b><br/><br/>
+										13,000원
+									</span>
+								</a>
+							</li>
+							<li class="pj_3">
+								<a href="#" title="Coffee">
+									<strong class="img">
+										<img src="img/shop6/shop6_1.jpg" alt="상품이미지3"/>
+									</strong>
+									<span class="text">
+										<b>Coffee</b><br/><br/>
+										32,000원
+									</span>
+								</a>
+							</li>
+							<li class="pj_4">
+								<a href="#" title="Blanket">
+									<strong class="img">
+										<img src="img/shop6/shop6_2.jpg" alt="상품이미지4"/>
+									</strong>
+									<span class="text">
+										<b>Blanket</b><br/><br/>
+										18,000원
+									</span>
+								</a>
+							</li>
+							<li class="pj_5">
+								<a href="#" title="Diffuser">
+									<strong class="img">
+										<img src="img/shop2/shop2.jpg" alt="상품이미지5"/>
+									</strong>
+									<span class="text">
+										<b>Diffuser</b><br/><br/>
+										12,000원
+									</span>
+								</a>
+							</li>
+							<li class="pj_6">
+								<a href="#" title="Figures">
+									<strong class="img">
+										<img src="img/shop4/shop4.jpg" alt="상품이미지6"/>
+									</strong>
+									<span class="text">
+										<b>Figures</b><br/><br/>
+										4,500원
+									</span>
+								</a>
+							</li>
+							<li class="pj_7">
+								<a href="#" title="Animal Doll">
+									<strong class="img">
+										<img src="img/shop5/shop5_14.jpg" alt="상품이미지7"/>
+									</strong>
+									<span class="text">
+										<b>Animal Doll</b><br/><br/>
+										4,500원
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="project">
+					<h2>Recent Project</h2>
+					<div class="proDesc">
+						<ul>
+							<li class="image0"> <!--동물 인형-->
+								<div class="pj_0_text">
+									<p>
+										<a href="#" title="익명이 인형들">
+											<span>익명이가 동물로 변했다?! 귀여운 모습의 다양한 익명이를 만나보세요!</span>
+										</a>
+									</p>
+								</div>
+							</li>
+							<li class="image2"> <!--퍼퓸 태그-->
+								<div class="pj_0_text">
+									<p>
+										<a href="#" title="익명이 퍼퓸태그">
+											<span>익명이가 퍼퓸태그로 돌아왔다! 향기로운 익명이와 함께 해보는 것은 어떨까요?</span>
+										</a>
+									</p>
+								</div>
+							</li>
+							<li class="center0"> <!--여름 피규어-->
+								<div class="pj_1_text">
+									<p>
+										<a href="#" title="익명이 여름 피규어">
+											<span>드디어 익명이의 피규어가 발매 되었습니다~<br/>여름철을 맞이한 모습, 일상에서의 여러 모습을 만나보세요! </span>
+										</a>
+									</p>
+								</div>
+							</li>
+							<li class="center1"> <!--석고 방향제-->
+								<div class="pj_1_text">
+									<p>
+										<a href="#" title="익명이 석고 방향제 출시!">
+											<span>익명이 모습의 향기로운 석고 방향제가 첫 출시 되었습니다!<br/>원하는 향과 다양한 익명이의 모습으로 집을 꾸며보는건 어떨까요?</span>
+										</a>
+									</p>
+								</div>
+							</li>
+							<li class="image1"> <!--다이어리-->
+								<div class="pj_0_text">
+									<p>
+										<a href="#" title="익명이 다이어리">
+											<span>익명이의 첫 다이어리 등장~! 올 한해도 익명이와 함께 할 준비 되었나요?</span>
+										</a>
+									</p>
+								</div>
+							</li>
+							<li class="image3">	<!--첫 번째 인형--> 
+								<div class="pj_0_text">
+									<p>
+										<a href="#" title="익명이의 첫번째 project">
+											<span>드디어 익명이의 첫번째 프로젝트가 개시되었습니다. 말랑한 익명이를 만나보세요!</span>
+										</a>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="news"> <!--각 img에 마우스 올렸을 때 불투명도 주면서 글씨 확인할 수 있는 기능 확인 필요-->
+					<h2>News</h2>
+					<div id="newsDesc">
+						<div class="news_main">
+							<div class="news_top">
+								<a href="#" title="익명이 힐링 에세이">
+									<span class="news_img">
+										<img src="img/s0001.jpg" alt="익명이 힐링 에세이"/>
+									</span>
+									<!--<span class="news_text">
+										드디어 발매 된 <b>익명 에세이</b>를 만나보세요!
+									</span>-->
+								</a>
+							</div>
+							<div class="news_list">
+								<ul>
+									<li class="box_4"> <!--생일 익명이-->
+										<a href="#" title="익명이 생일">
+											<span class="img_area">
+												<img src="img/s5.jpg" alt="익명이 생일"/>
+											</span>
+											<span class="news_text">
+												올해도 어김없이 돌아온<br/>익명이의 생일을 축하해주세요!
+											</span>
+										</a>
+									</li>
+									<li class="box_3">
+										<a href="#" title="이벤트 이미지1">
+											<span class="img_area">
+												<img src="img/s8.jpg" alt="이벤트이미지0"/>
+											</span>
+											<span class="news_text">
+												깨꾹이의 삼성 테마가 등장!<br/>지금 바로 만나보세요~
+											</span>
+										</a>
+									</li>
+									<li class="box_1">
+										<a href="#" title="이벤트이미지0">
+											<img src="img/s6.jpg" alt="이벤트이미지0"/>
+										</a>
+									</li>
+									<li class="box_2">
+										<a href="#" title="이벤트이미지0">
+											<img src="img/s10.jpg" alt="이벤트이미지0"/>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="news_side">
+							<p>
+								<a href="#" title="ARTWORKS_">
+									여름바다의 <span class="color0">익명이,</span><br/><span class="color1">깨꾹이</span>, 그리고 올쨍이까지!<br/><br/>
+									<span class="size">▶보러가기</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div id="video">
+					<h2>Video</h2>
+					<div class="videoArea">
+						<div class="videoDesc">
+							<ul>
+								<li class="video_img0">
+									<a href="#" title="여름 배경화면 만들기">
+										<span>
+											<img src="img/playBtn.png" alt="동영상 미리보기 이미지"/>
+										</span>
+										<span class="video_text">
+											벌써 반년이 지났다! 익명이 여름 배경화면 그리기!
+										</span>
+									</a>
+								</li>
+								<li class="video_img1">
+									<a href="#" title="겨울 배경화면 만들기">
+										<span>
+											<img src="img/playBtn.png" alt="동영상 미리보기 이미지"/>
+										</span>
+										<span class="video_text">
+											익명이 겨울 배경화면을 그립니다~
+										</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="artworks">
+					<h2>Artworks</h2>
+					<div class="artArea">
+						<ul>
+							<li>
+								<a href="#" title="September">
+									<span class="image5">
+										<span class="text">
+											9월 깨꾹이 배경화면
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="August">
+									<span class="image2">
+										<span class="text">
+											8월 익명이 배경화면
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="" title="July">
+									<span class="image1">
+										<span class="text">
+											7월 깨꾹이 배경화면
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="" title="September">
+									<span class="image4">
+										<span class="text">
+											9월 익명이 배경화면
+										</span>
+									</span>
+								</a>
+							</li><!--8월 pc배경-->
+							<li>
+								<a href="#" title="August">
+									<span class="image3">
+										<span class="text">
+											8월 깨꾹이 배경화면
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="" title="July">
+									<span class="image0">
+										<span class="text">
+											7월 익명이 배경화면
+										</span>
+									</span>
+								</a>
+							</li>	<!--7월 pc배경-->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<h3>푸터 안내 및 카피라이터</h3>
+			<div id="footer_nav">
+				<ul>
+					<li><a href="#" title="라이선스문의">라이선스문의</a></li>
+					<li><a href="#" title="이용약관">이용약관</a></li>
+					<li><a href="#" title="개인정보취급방침">개인정보취급방침</a></li>
+					<li><a href="#" title="이용안내">이용안내</a></li>
+					<li><a href="#" title="광고/제휴문의">광고/제휴문의</a></li>
+				</ul>
+			</div>
+			<div id="footer_desc">
+				<div class="desc_area">
+					<div class="footer_logo">
+						<p>
+							<img src="img/logo/logo4.png" alt="로고 이미지"/>
+						</p>
+					</div>
+					<div class="footer_text">
+						<strong>익명</strong>
+						<p>김채연 / 서울특별시 은평구</p>
+						<p>사업자등록번호 : 123-45-67898 / 통신판매업신고번호 : 2021-서울nn-0819</p>
+						<p>대표번호 : 010-8301-4946 </p>
+					</div>
+					<div class="qna">
+						<strong>각종 문의안내</strong>
+						<p class="size">평일 09:00 ~ 18:00</p>
+						<p class="size">E-Mail : gk13578@gmail.com</p>
+						<p class="btn">
+							<a href="#" title="1:1상담하기"><button>1:1 상담하기 &gt;</button></a>
+							<a href="#" title="자주 묻는 질문"><button>자주 묻는 질문 &gt;</button></a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<p id="copy">
+				copyright &copy; ikmyeong all right reserved.
+			</p>
+		</div>
+	</div>
+ </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <title>mini_game</title>
+  <meta charset="utf-8"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <style>
+		@font-face{font-family:"warm";
+		src:url("../font/warm.woff");}
+
+		*{margin:0; padding:0;}
+		body{margin:0; padding:0;}
+		li{list-style:none;}
+		
+		#wrap{width:100%; height:937px; background-color:#94D3AC;}
+		#container{width:100%; font-family:"warm"; font-size:20px;}
+
+		#content{width:1100px; height:917px; margin:0 auto; padding-top:20px; background-color:rgba(255,255,255,0.5);}
+		
+		#top_menu{width:100%; height:50px;}
+		
+		#top_menu h3{width:500px; line-height:50px; text-align:center; font-size:26px; float:left;}
+		#top_menu p{width:230px; line-height:50px; float:left;}
+
+		#top_menu .sco input{border:none; width:200px; height:30px; text-align:right;}
+		
+		#top_menu .re{text-align:center;}
+		#top_menu .re input{border:none; border:1px solid #aaa; width:100px; height:30px; font-family:"warm"; font-size:18px; cursor:pointer;}
+
+
+		#game{width:100%; height:860px; position:relative;}
+
+		#game_inner{width:820px; height:840px; position:absolute; left:120px; top:10px;}
+		
+		#game_inner li{width:190px; height:190px; margin:10px 10px; margin-right:0; border:1px solid red; float:left;}
+		#game_inner li a{display:block; width:100%; height:100%;}
+		#game_inner li img{width:100%; height:100%; transform:rotatey(90deg);}
+		@keyframes card{
+			50%{transform:rotatey(0deg);}
+			100%{transform:rotatey(90deg);}
+		}
+  </style>
+  <script>
+		$(document).ready(function(){
+			$("#start").click(function(){
+				$("#game_inner li img").css({"animation":"card 1s 1"});
+			});
+
+			$("#game_inner li img").hide();
+			$("#game_inner li").click(function(){
+				$(this).children("a").children("img").show();
+			});
+		});
+		
+	
+  </script>
+ </head>
+ <body>
+	<div id="wrap">
+		<div id="container">
+			<div id="content">
+				<div id="top_menu">
+					<h3>익명이를 찾아라!</h3>
+					<p class="sco">
+						<input id="total" type="text" title="총합" readonly/> 점
+					</p>
+					<p class="re">
+						<input id="start" type="button" value="start" title="start"/>
+						<input id="reset" type="button" value="reset" title="reset" onclick="reset();"/>
+					</p>
+				</div>
+				<div id="game">
+					<ul id="game_inner">
+						<li id="img4">
+							<a href="#none" title="익명카드">
+								<img src="../img/mini/s4.png" alt="익명카드"/>
+							</a>
+						</li>
+						<li id="img1">
+							<a href="#none" title="익명카드">
+								<img src="../img/mini/s1.png" alt="익명카드"/>
+							</a>
+						</li>
+						<li id="img0">
+							<a href="#none" title="익명카드">
+								<img src="../img/mini/s0.png" alt="익명카드"/>
+							</a>
+						</li>
+						<li id="img3">
+							<a href="#none" title="익명카드">
+								<img src="../img/mini/s3.png" alt="익명카드"/>
+							</a>
+						</li>
+						<li id="img2">
+							<a href="#none" title="익명카드">
+								<img src="../img/mini/s2.png" alt="익명카드"/>
+							</a>
+						</li>
+						<li id="img0">
+							<a href="#none" title="익명카드">
+								<img src="../img/mini/s0.png" alt="익명카드0"/>
+							</a>
+						</li>
+						<li id="img1">
+							<a href="#none" title="익명카드">
+								<img src="../img/mini/s1.png" alt="익명카드"/>
+							</a>
+						</li>
+						<li id="img0">
+							<a href="#none" title="익명카드">
+								<img src="../img/mini/s0.png" alt="익명카드0"/>
+							</a>
+						</li>
+						<li id="img2">
+							<a href="#none" title="익명카드">
+								<img src="../img/mini/s2.png" alt="익명카드"/>
+							</a>
+						</li>
+						<li id="img0">
+							<a href="#none" title="익명카드">
+								<img src="../img/mini/s0.png" alt="익명카드"/>
+							</a>
+						</li>
+						<li id="img1">
+							<a href="#none" title="익명카드">
+								<img src="../img/mini/s1.png" alt="익명카드"/>
+							</a>
+						</li>
+						<li id="img2">
+							<a href="#none" title="익명카드">
+								<img src="../img/mini/s2.png" alt="익명카드"/>
+							</a>
+						</li>
+						<li id="img4">
+							<a href="#none" title="익명카드">
+								<img src="../img/mini/s4.png" alt="익명카드"/>
+							</a>
+						</li>
+						<li id="img2">
+							<a href="#none" title="익명카드">
+								<img src="../img/mini/s2.png" alt="익명카드"/>
+							</a>
+						</li>
+						<li id="img3">
+							<a href="#none" title="익명카드">
+								<img src="../img/mini/s3.png" alt="익명카드"/>
+							</a>
+						</li>
+						<li id="img1">
+							<a href="#none" title="익명카드">
+								<img src="../img/mini/s1.png" alt="익명카드"/>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+ </body>
+</html>

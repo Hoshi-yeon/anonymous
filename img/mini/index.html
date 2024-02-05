@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        #container {
+            padding-top: 80px;
+        }
+
+        .card {
+            display: inline-block;
+            width: 60px;
+            height: 80px;
+            margin: 20px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+
+        .front {
+            background-color: #FFF;
+        }
+
+        .back {
+            background-color: #000;
+        }
+
+    </style>
+    <script>
+        $(document).ready(function() {
+            var card = document.getElementsByClassName("card");
+            var score = document.getElementById("score");
+
+            score.value = 0;
+
+            for(var i = 0; i < card.length; i++) {
+                card[i].addEventListener('click', function() {
+                    console.log($(this));
+
+                    if($(this).hasClass('back')) {
+                        $(this).removeClass('back');
+                        $(this).addClass('front');
+                    }
+                    var flippedCardCount = $('.front.unmatched');
+
+                    if(flippedCardCount.length === 2) {
+                        console.log("2 cards flipped");
+
+                        console.log(flippedCardCount[0].innerText);
+                        console.log(flippedCardCount[1].innerText);
+
+                        if(flippedCardCount[0].innerText === flippedCardCount[1].innerText) {
+                            score.value = parseInt(score.value) + 50;
+                            flippedCardCount.removeClass('unmatched').addClass('matched');
+                        } else {
+                            setTimeout(function() {
+                                for(var i = flippedCardCount.length - 1; i >= 0; i--) {
+                                    flippedCardCount.removeClass('front');
+                                    flippedCardCount.addClass('back');
+                                }
+                            }, 1000);
+                        }
+                    }
+
+                    var solvedCard = $('.matched');
+
+                    setTimeout(function() {
+                        if(solvedCard.length === card.length)
+                            alert('Cleared!!');
+                    }, 100);
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <input type="number" id="score" readonly>
+        <ul>
+            <li class="card back unmatched">AA</li>
+            <li class="card back unmatched">CC</li>
+            <li class="card back unmatched">BB</li>
+            <li class="card back unmatched">BB</li>
+            <li class="card back unmatched">AA</li>
+            <li class="card back unmatched">CC</li>
+        </ul>
+    </div>
+</body>
+</html>
